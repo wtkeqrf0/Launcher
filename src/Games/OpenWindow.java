@@ -8,7 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.TimeUnit;
 
 public class OpenWindow extends JFrame implements ActionListener, MouseMotionListener {
     public static void main(String[] args) {
@@ -101,10 +100,10 @@ public class OpenWindow extends JFrame implements ActionListener, MouseMotionLis
             inGame=true;
             switch (e.getActionCommand()) {
                 case "Крестики-нолики" -> {
-                    if (bot) fork.execute(new WindowGameAI());
-                    else fork.execute(new WindowGame());
+                    if (bot) fork.execute(new Tic_tac_toeAI());
+                    else fork.execute(new Tic_tac_toe());
                 }
-                case "Змейка" -> fork.execute(new MainWindow());
+                case "Змейка" -> fork.execute(new Snake());
                 case "Настройки" -> fork.execute(new Settings());
             }
         } if (e.getActionCommand().equals("Выход")) System.exit(0);

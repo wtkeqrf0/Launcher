@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import static java.lang.Math.random;
 
-public class WindowGameAI extends WindowGame {
+public class Tic_tac_toeAI extends Tic_tac_toe {
     private int rand = -1;
     private final boolean[] mas=new boolean[9];
     private boolean stupid,brain=false;
     private final ArrayList<JButton> list=new ArrayList<>();
 
-    WindowGameAI() {
+    Tic_tac_toeAI() {
         super();
         list.add(b1);
         list.add(b2);

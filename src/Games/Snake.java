@@ -5,7 +5,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.concurrent.RecursiveAction;
 
-public class MainWindow extends RecursiveAction {
+public class Snake extends RecursiveAction {
 
     @Override
     protected void compute() {

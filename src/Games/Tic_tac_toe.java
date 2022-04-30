@@ -8,7 +8,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.concurrent.RecursiveAction;
 
-public class WindowGame extends RecursiveAction implements ActionListener {
+public class Tic_tac_toe extends RecursiveAction implements ActionListener {
     protected final JButton b1 = new JButton(), b2 = new JButton(), b3 = new JButton(), b4 = new JButton(), b5 = new JButton(),
             b6 = new JButton(), b7 = new JButton(), b8 = new JButton(), b9 = new JButton();
     protected int count = 0;
